@@ -1,0 +1,359 @@
+body>div{
+	width: 1000px;
+	height: 1750px;
+	background: url(../img/bodybg.jpg) no-repeat, #e5f2f4;
+	margin: -15px auto 0;
+	box-shadow: 0 0 4px #ccc;
+	font-family:Arial;
+}
+
+/*Шапка*/
+
+header{
+	width:100%;
+	height:140px;
+}
+.logo{
+	position: absolute;
+	top:-40px;
+	width: 335px;
+	height: 180px;
+	background: url(../img/logo.jpg) no-repeat 100% 100% #fff;
+	border-radius:15px;	
+	margin-left: 45px;
+	margin-top:0px;
+}
+
+/*Слоган*/
+.slogan{
+	position: absolute;
+	top:-40px;
+	background-color:#fff;
+	width: 370px;
+	height:180px;
+	margin-left:410px;
+}
+.line{
+	display:inline-block;
+}
+.date{
+	position: absolute;
+	bottom:0;
+	right:0;
+	color:#005b7f;
+	font: 60px Arial;
+	margin:0;
+}
+
+/* Навигация */
+/*http://htmlacademy.ru/courses/50/run/5*/
+nav{
+	width:100px;
+	height:100px;
+	display:block;
+	float:right;
+	background-color: #005b7f;
+	border-radius: 15px;
+	margin-top: 35px;
+	margin-right: 100px;
+}
+nav ul{
+	width:85px;
+	height:90px;
+	margin:5px;
+	padding-left:5px;
+	list-style:none;
+}
+nav li{
+	display:block;
+}
+nav a{
+	display:block;
+	padding-left:5px;
+	width:80px;
+	height:30px;
+	font: 14px/14px Arial;
+	line-height:30px;
+	color: white;
+	background-color:white;
+	border-radius:10px;
+	background-color: #005b7f;
+}
+nav a:hover{
+	color: black;
+	background-color: white;
+}
+
+/*Article*/ 
+article{
+	width: 605px;
+	padding-left:45px;
+	padding-top:30px;
+}
+.main{
+	font-size:24px;
+	font-style:bold;
+	margin:0;
+}
+article p{
+	font-size:12px;
+	margin-bottom:10px;
+}
+article a{
+	text-decoration:none;
+}
+.victblock{
+	background: url(../img/vict.jpg) no-repeat;
+	width:610px;
+	height:535px;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	/*-moz-border-radius-topright: 20px;
+	-moz-bottom-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-webkit-border-top-right-radius:20px;*/
+	margin-top:105px;
+	padding:25px 15px 0 45px;
+}
+
+
+.good{
+	float:left;
+	width:150px;
+	height: 300px;
+	margin: 0 0 0 0;
+	font-size:12px;
+}
+.igood{
+	width:150px ;
+	height: 300px;
+	margin: 0 0 0 0;
+}
+.titlevicblock{
+	width:150px;
+	height: 50px;
+	margin:0 0 30px 0;
+	font-size:24px !important;
+	color: #fff;
+}
+.subtitle{
+	font-size:14px;
+}
+.good>p:first-child{
+	font-size:14px;
+}
+
+/*карусельная*/
+.carousel {
+  position: relative;
+  width: 129px;
+  padding: 0 30px 0 12px;
+  margin-left:-10px;
+  margin-bottom:10px;
+}
+.carousel img {
+  width: 123px;
+  height: 108px;
+  display: block;
+}
+.carousel .arrow {
+  position: absolute;
+  top: 35px;
+  text-decoration: none;
+}
+
+.carousel .arrow:hover {
+	opacity:0.8;
+}
+.carousel .left-arrow {
+  left: 2px;
+}
+.carousel .right-arrow {
+  right: 0px;
+}
+.gallery {
+  width: 150px;
+  overflow: hidden;
+}
+.gallery ul {
+  height: 108px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery ul li {
+	float: left;
+}
+.gallery ul li img{
+	margin-left:21px;
+	width:108px;
+}
+img.button{
+	width:28px;
+	height: 43px;
+}
+.link{
+	text-decoration:underline;
+}
+
+.vict-form{
+	float:right;
+	width:411px;
+	height: 430px;
+}
+.vict-form>p:first-child{
+	color: #fff;
+	font-size:14px;
+	margin-bottom:30px;
+}
+form>p:first-child{
+	display:inline;
+	font-size:14px;
+}
+input[type="email"]{
+	margin-left:10px;
+	width:215px;
+}
+.questions{
+	margin:15px 0 10px 0;
+	font-size:24px;
+}
+.questions span{
+	color: #f00;
+}
+.questions+p{
+		font-size:14px;
+		margin-top:10px;
+		margin-bottom:20px;
+}
+input[type="radio"]{
+	margin-bottom:10px;
+}
+label{
+	font-size:12px;
+}
+input[type="image"]:hover{
+	opacity:0.8;
+}
+
+/*   блок идеи    */
+article.idea-block{
+	width: 625px;
+	height: 325px;
+	margin: 45px 45px 0;
+	padding:0;
+}
+.idea-block .title{
+	font-size:24px;
+	margin-bottom:10px;
+}
+.idea-block>a{
+	display:block;
+	font-size:14px;
+}
+.item{
+	float:left;
+	margin:20px 65px 0 0;
+	width: 280px;
+	height:108px;
+}
+.item:nth-child(even){
+	margin-right:0;
+}
+.item img{
+	float:left;
+}
+.item a{
+	text-decoration:underline;
+}
+
+/*  футер   */
+footer{
+	width:945px;
+	height:200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+footer .title{
+	font-size:24px;
+	margin-bottom:15px;
+}
+.carousel2 {
+  position: relative;
+  width: 881px;
+  padding: 0 30px;
+  border: 2px solid #36a01d;
+  border-radius: 15px;
+  background: #36a01d;
+  
+}
+.carousel2 img {
+  width: 160px;
+  height: 60px;
+	margin-top:15px;
+  display: block; /* если не поставить block, в ряде браузеров будет inline -> лишнее пространтсво вокруг элементов */
+}
+.carousel2 .arrow {
+  position: absolute;
+  top: 0px;
+  padding: 0;
+  background: #36a01d;
+  border-radius: 15px;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.carousel2 .left-arrow {
+  left:-2px;
+}
+.carousel2 .right-arrow {
+  right:-2px;
+}
+.carousel2 .imgarrow{
+	width:32px;
+	height:86px;
+	margin:0;
+}
+.carousel2 .imgarrow:hover{
+	opacity:0.8;
+}
+.carousel2 .gallery2 {
+  width: 881px;
+  height: 85px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.carousel2 .gallery2 ul {
+  height: 60px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.carousel2 .gallery2 ul li {
+	float: left;
+}
+.postscriptum{
+	padding:30px 30px 0;
+}
+.postscriptum img{
+	float:left;
+}
+.postscriptum .imgallsoft{
+	margin-right: 25px;
+}
+.postscriptum p{
+	margin:10px 65px 0 0;
+	float:left;
+	font-size:12px;
+}
+.postscriptum p+img, .postscriptum p+img+img{
+	margin:20px 10px 0 0;
+}
+.imgsoftline{
+	margin: 20px 0 0 20px;
+}
+
