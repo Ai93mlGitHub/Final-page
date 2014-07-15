@@ -1,181 +1,210 @@
-body>div{
-	width: 1000px;
-	height: 1750px;
-	background: url(../img/bodybg.jpg) no-repeat, #e5f2f4;
-	margin: -15px auto 0;
-	box-shadow: 0 0 4px #ccc;
-	font-family:Arial;
+body{
+	margin:0;
+	font: 12px Arial, sans-serif;
 }
-
-/*Шапка*/
-
+.main-block{
+	margin: 0 auto;
+	width:1000px;
+	min-height: 1620px;
+	background: url(../img/bodybg.jpg) no-repeat #fff;
+}
 header{
-	width:100%;
+	padding:0 50px;
 	height:140px;
 }
-.logo{
-	position: absolute;
-	top:-40px;
-	width: 335px;
-	height: 180px;
-	background: url(../img/logo.jpg) no-repeat 100% 100% #fff;
-	border-radius:15px;	
-	margin-left: 45px;
-	margin-top:0px;
-}
-
-/*Слоган*/
-.slogan{
-	position: absolute;
-	top:-40px;
-	background-color:#fff;
-	width: 370px;
-	height:180px;
-	margin-left:410px;
-}
-.line{
-	display:inline-block;
-}
-.date{
-	position: absolute;
-	bottom:0;
-	right:0;
-	color:#005b7f;
-	font: 60px Arial;
-	margin:0;
-}
-
-/* Навигация */
-/*http://htmlacademy.ru/courses/50/run/5*/
-nav{
-	width:100px;
-	height:100px;
+article{
 	display:block;
-	float:right;
-	background-color: #005b7f;
-	border-radius: 15px;
-	margin-top: 35px;
-	margin-right: 100px;
+	width: 625px;
+	padding: 35px 0 0 50px;
 }
-nav ul{
+section{
+	display:block;
+	padding: 35px 0 0 50px;
+}
+footer{
+	display:block;
+	padding: 35px 0 0 50px;
+	height: 20px;
+}
+h2{
+	margin:0;
+	font-size:24px;
+	font-weight:normal;
+}
+h3{
+	margin:0;
+	font-size:14px;
+	font-weight:normal;
+}
+p{
+	margin-bottom:0;
+}
+a{
+	color: #0072bc;
+}
+label{
+	display:block;
+}
+.blue-text{
+		color: #0072bc;
+}
+.clear{
+	clear:both;
+}		
+
+
+.head-logo{
+	float:left;
+	width:340px;
+	height: 140px;
+	background: #fff;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius:10px;
+}
+div.head-logo>img{
+	position:relative;
+	top:25%;
+	display:block;
+	margin: 0 auto;
+}
+.head-slogan{
+	float:left;
+	margin:0 0 0 25px;
+	padding:40px 0 0 0;
+	width: 370px;
+	font: italic normal bold 30px/29px "Trebuchet MS", Arial, sans-serif;
+}
+.head-slogan .slogan-line{
+	white-space:pre;
+	background:#005b7f;
+	color: #fff;
+}
+.head-slogan .slogan-year{
+	color: #005b7f;
+	font-size: 65px;
+	
+	position:relative;
+	top: 22px;
+}
+.head-nav{
+	float:right;
+	display:block;
+	width:100px;
+	margin: 35px 30px 0 0;
+	
+	background: #005b7f;
+	border-radius: 15px;
+}
+.head-nav ul{
 	width:85px;
-	height:90px;
 	margin:5px;
 	padding-left:5px;
 	list-style:none;
 }
-nav li{
+.head-nav li{
 	display:block;
 }
-nav a{
+.head-nav a{
 	display:block;
 	padding-left:5px;
 	width:80px;
 	height:30px;
+	
 	font: 14px/14px Arial;
 	line-height:30px;
+	
 	color: white;
 	background-color:white;
 	border-radius:10px;
 	background-color: #005b7f;
 }
-nav a:hover{
+.head-nav a:hover{
 	color: black;
 	background-color: white;
 }
 
-/*Article*/ 
-article{
-	width: 605px;
-	padding-left:45px;
-	padding-top:30px;
+.quiz-bg{
+	height: 775px;
+	background: url(../img/gifts.png) no-repeat;
+	margin-top:-90px;
 }
-.main{
-	font-size:24px;
-	font-style:bold;
-	margin:0;
+.quiz-block{
+	position:relative;
+	top: 215px;
+	width: 680px;
+	height: 560px;
+	padding:0;
+	background: url(../img/quiz.jpg) no-repeat;
+	border-bottom-right-radius:25px;
+	border-top-right-radius:25px;
 }
-article p{
-	font-size:12px;
-	margin-bottom:10px;
+.quiz-title{
+	height:90px;
 }
-article a{
-	text-decoration:none;
-}
-.victblock{
-	background: url(../img/vict.jpg) no-repeat;
-	width:610px;
-	height:535px;
-	border-top-right-radius:20px;
-	border-bottom-right-radius:20px;
-	/*-moz-border-radius-topright: 20px;
-	-moz-bottom-right-radius:20px;
-	-webkit-border-bottom-right-radius:20px;
-	-webkit-border-top-right-radius:20px;*/
-	margin-top:105px;
-	padding:25px 15px 0 45px;
-}
-
-
-.good{
-	float:left;
-	width:150px;
-	height: 300px;
-	margin: 0 0 0 0;
-	font-size:12px;
-}
-.igood{
-	width:150px ;
-	height: 300px;
-	margin: 0 0 0 0;
-}
-.titlevicblock{
-	width:150px;
-	height: 50px;
-	margin:0 0 30px 0;
-	font-size:24px !important;
+.quiz-title h2{
+	position: absolute;
+	bottom:467px;
+	
+	width: 140px;
+	margin: 0 35px 15px 50px;
 	color: #fff;
 }
-.subtitle{
+.quiz-title p{
+	position: absolute;
+	bottom: 470px;
+	left:225px;
+	
+	margin: 0 0 15px 30px;
+	width: 405px;
 	font-size:14px;
+	color: #fff;
+	
+	white-space: pre;
 }
-.good>p:first-child{
-	font-size:14px;
+.quiz-gift{
+	float:left;
+	width:160px;
+	margin: 15px 13px 0 50px;
+	
+}.gift-caroucel-items{
+	width:150px ;
+	height: 200px;
+	margin: 15px 0 0 0;
 }
-
-/*карусельная*/
-.carousel {
+.gift-caroucel-items p{
+	height:80px;
+}
+.gift-carousel {
   position: relative;
   width: 129px;
   padding: 0 30px 0 12px;
   margin-left:-10px;
   margin-bottom:10px;
 }
-.carousel img {
+.gift-carousel img {
   width: 123px;
   height: 108px;
   display: block;
 }
-.carousel .arrow {
+.gift-carousel .arrow {
   position: absolute;
   top: 35px;
   text-decoration: none;
 }
-
-.carousel .arrow:hover {
+.gift-carousel .arrow:hover {
 	opacity:0.8;
 }
-.carousel .left-arrow {
+.gift-carousel .left-arrow {
   left: 2px;
 }
-.carousel .right-arrow {
+.gift-carousel .right-arrow {
   right: 0px;
 }
-.gallery {
+.gift-gallery {
   width: 150px;
   overflow: hidden;
 }
-.gallery ul {
+.gift-gallery ul {
   height: 108px;
   width: 9999px;
   margin: 0;
@@ -183,71 +212,90 @@ article a{
   list-style: none;
 }
 
-.gallery ul li {
+.gift-gallery ul li {
 	float: left;
 }
-.gallery ul li img{
+.gift-gallery ul li img{
 	margin-left:21px;
 	width:108px;
 }
-img.button{
+.gift-button{
 	width:28px;
 	height: 43px;
 }
-.link{
-	text-decoration:underline;
+.gift-button-left{
+	background: url(../img/prevbutton.png);
 }
-
-.vict-form{
-	float:right;
-	width:411px;
-	height: 430px;
+.gift-button-left:hover{
+	background: url(../img/prevbuttonpress.png);
 }
-.vict-form>p:first-child{
-	color: #fff;
+.gift-button-right{
+	background: url(../img/nextbutton.png);
+}
+.gift-button-right:hover{
+	background: url(../img/nextbuttonpress.png);
+}
+.quiz-form{
+	float: left;
+	width: 411px;
+	margin: 15px 0 0 26px;
+}
+.quiz-form>p{
+	height:120px;
+	line-height: 14px;
+	margin:0;
+	overflow:auto;
+}
+.quiz-form-email{
+	margin-top: 25px;
 	font-size:14px;
-	margin-bottom:30px;
 }
-form>p:first-child{
-	display:inline;
-	font-size:14px;
+.quiz-form input[type="email"]{
+	margin: 0 0 0 10px;
+	padding: 0 10px;
+	width:200px;
 }
-input[type="email"]{
-	margin-left:10px;
-	width:215px;
+.quiz-form input[type="email"]:hover{
+	value='';
 }
-.questions{
-	margin:15px 0 10px 0;
-	font-size:24px;
+.quiz-form h2{
+	margin: 25px 0 0 0;
 }
-.questions span{
-	color: #f00;
+.quiz-form h2 span{
+	color: #ee1c24;
 }
-.questions+p{
-		font-size:14px;
-		margin-top:10px;
-		margin-bottom:20px;
+.quiz-form form p{
+	margin-top: 10px;
 }
-input[type="radio"]{
-	margin-bottom:10px;
+.quiz-form form label{
+	margin-top: 10px;
 }
-label{
-	font-size:12px;
+.quiz-form form input[type="image"]{
+	margin-top:15px;
 }
-input[type="image"]:hover{
+.quiz-form form input[type="image"]:hover{
 	opacity:0.8;
 }
-
-/*   блок идеи    */
-article.idea-block{
+.quiz-form form input[type="radio"]{
+	margin:0 5px 0 0;
+}
+.idea-block{
 	width: 625px;
-	height: 325px;
-	margin: 45px 45px 0;
+	margin: 35px 0 0 50px;
 	padding:0;
 }
-.idea-block .title{
-	font-size:24px;
-	margin-bottom:10px;
+.idea-block>p{
+	font-size:14px;
+}
+.idea-block h2{
+	padding:0;
+	margin:0;
+	text-align:left;
+}
+.idea-block ul{
+	margin:0;
+	padding:0;
+	list-style:none;
 }
 .idea-block>a{
 	display:block;
@@ -268,92 +316,129 @@ article.idea-block{
 .item a{
 	text-decoration:underline;
 }
-
-/*  футер   */
-footer{
-	width:945px;
-	height:200px;
-	margin-left:auto;
-	margin-right:auto;
-}
-footer .title{
-	font-size:24px;
-	margin-bottom:15px;
-}
-.carousel2 {
+.partnership-carousel{
+	z-index:100;
   position: relative;
+  left: -15px;
   width: 881px;
-  padding: 0 30px;
+  margin: 15px 0 0 0;
+  padding: 0 28px;
   border: 2px solid #36a01d;
-  border-radius: 15px;
-  background: #36a01d;
-  
+  border-radius: 23px;
 }
-.carousel2 img {
+.partnership-carousel img {
   width: 160px;
   height: 60px;
 	margin-top:15px;
-  display: block; /* если не поставить block, в ряде браузеров будет inline -> лишнее пространтсво вокруг элементов */
+  display: block;
 }
-.carousel2 .arrow {
+.partnership-carousel .arrow {
   position: absolute;
-  top: 0px;
+  top: -3px;
   padding: 0;
-  background: #36a01d;
-  border-radius: 15px;
   font-size: 24px;
   color: #fff;
   text-decoration: none;
 }
 
-.carousel2 .left-arrow {
+.partnership-carousel .left-arrow {
   left:-2px;
 }
-.carousel2 .right-arrow {
-  right:-2px;
+.partnership-carousel .right-arrow {
+  right:-5px;
 }
-.carousel2 .imgarrow{
+.partnership-carousel .imgarrow{
 	width:32px;
 	height:86px;
 	margin:0;
 }
-.carousel2 .imgarrow:hover{
+.partnership-carousel .imgarrow:hover{
 	opacity:0.8;
 }
-.carousel2 .gallery2 {
-  width: 881px;
-  height: 85px;
+.partnership-carousel .gallery2 {
+  width: 885px;
+  height: 83px;
   overflow: hidden;
   background-color: #fff;
 }
-.carousel2 .gallery2 ul {
+.partnership-carousel .gallery2 ul {
   height: 60px;
   width: 9999px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.carousel2 .gallery2 ul li {
+.partnership-carousel .gallery2 ul li {
 	float: left;
 }
-.postscriptum{
-	padding:30px 30px 0;
+.partnership-button{
+	margin:0;
+	padding:0;
+	width: 29px;
+	height:87px;
+	border:0;
 }
-.postscriptum img{
+
+.partnership-button-left{
+	background: url(../img/prevbutton2.png);
+}
+.partnership-button-left:hover{
+	background: url(../img/prevbutton2pass.png);
+}
+.partnership-button-right{
+	background: url(../img/nextbutton2.png);
+}
+.partnership-button-right:hover{
+	background: url(../img/nextbutton2pass.png);
+}
+footer *{
 	float:left;
 }
-.postscriptum .imgallsoft{
-	margin-right: 25px;
+footer .img-allsoft{
+	margin: 0 25px 0 19px;
 }
-.postscriptum p{
+footer p{
+	width: 380px;
 	margin:10px 65px 0 0;
-	float:left;
-	font-size:12px;
 }
-.postscriptum p+img, .postscriptum p+img+img{
+footer p+img, footer p+img+img{
 	margin:20px 10px 0 0;
 }
-.imgsoftline{
+footer .img-softline{
 	margin: 20px 0 0 20px;
 }
 
+.footer-sticky{
+	margin: 0 auto;
+	width:1000px;
+	height:1680px;
+	margin-top: -1625px;
+	background: url(../img/elka.png) no-repeat;
+}
+.footer-sticky a{
+}
+.present-abby{
+	position: relative;
+	top:190px;
+	left:889px;
+}
+.present-navitel{
+	position: relative;
+	top:295px;
+	left:663px;
+}
+.present-microsoft{
+	position: relative;
+	top:400px;
+	left:610px;
+}
+.present-movavi{
+	position: relative;
+	top:540px;
+	left:450px;
+}
+.present-panda{
+	position: relative;
+	top:660px;
+	left:290px;
+}

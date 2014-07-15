@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Allsoft.ru | Новогодняя викторина</title>
+		<meta charset="utf-8">
+		<link href="css/mystyle.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="main-block">
+		
+			<header>
+				<div class="head-logo">
+					<img src="img/logo-allsoft.png"/>
+				</div>
+				<h1 class="head-slogan">
+					<span class="slogan-line"> Новогодняя викторина </span>
+					<span class="slogan-line"> от Allsoft.ru </span>
+					<span class="slogan-year">2012</span>
+				</h1>
+				<nav class="head-nav">
+					<ul>
+						<li><a href="#">О магазине</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Блог Allsoft</a></li>
+					</ul>
+				</nav>
+				<!--<div class="clear"></div>-->
+			</header>
+			
+			<article>
+				<h2>Команда Allsoft.ru поздравляет всех пользователей лицензионного софта с наступающим Новым годом!</h2>
+				<p>
+					Уходящий год был богат на события и запомнился всем нам не только финансовыми затруднениями и эпидемией гриппа. 
+					В этом году вышла Windows 7 - качественно новая версия операционной системы от Microsoft, в Россию пришел SaaS, 
+					стало возможным покупать софт по SMS и в целом появилось гораздо больше возможностей
+					для получения качественного ПО по доступным ценам на всей территории нашей страны.
+				</p>
+				<p>
+					Вы в курсе событий из мира софта и IT? Тогда испытайте ваши знания в новогодней викторине от Allsoft.ru и выиграйте
+					замечательные подарки! Стоит отметить, что часть наших подарков не стала дожидаться вашего участия в викторине и уже 
+					удобно расположилась в районе новогоднего дерева. Скидки для вас приготовили наши лучшие партнеры - 
+					производители качественного и популярного программного обеспечения.
+				</p>
+				<p class="blue-text">
+					Собирайте подарки, участвуйте в викторине и оставайтесь с нами в новом 2012 году!
+				</p>
+			</article>
+	
+			<div class="quiz-bg clear">			
+				<section class="quiz-block">
+					<div  class="quiz-title">
+						<h2>Новогодняя викторина</h2>
+						<p>Ответьте правильно на несколько вопросов
+и мы подарим вам лицензию на выбранный подарок!</p>
+					</div>
+					
+					<div class="clear"></div>
+					
+					<div class="quiz-gift">
+						<h3>Выберите подарок</h3>
+						
+						<div class="gift-carousel">
+							<a href="#" class="arrow left-arrow" id="prev"><div class="gift-button gift-button-left"></div></a>
+								<div class="gift-gallery">
+									<ul id="images">
+									  <li>
+										<img src="img/goods1.png">
+										<div  class="gift-caroucel-items">
+											<a class="link" href="#">Panda Global<br/>Protection 2011</a>
+											<p>Призом является Panda Global Protection 2009 с бесплатным сроком регистрации 3 месяца.</p>
+											<a class="link" href="#">Полное описание</a>
+											<p>Цена: 667 руб.</p>
+										</div>
+									  </li>
+									  <li>
+										<img src="img/goods2.png">
+										<div  class="gift-caroucel-items">
+											<a class="link" href="#">Шарик<br/>предсказанй</a>
+											<p>Призом является мощнейшая земная ЭВМ, дающая ответ на главный вопрос жизни.</p>
+											<a class="link" href="#">Полное описание</a>
+											<p>Цена: 42 руб.</p>
+										</div>
+									  </li>
+									  <li>
+										<img src="img/goods3.png">
+										<div  class="gift-caroucel-items">
+											<a class="link" href="#">Магнитик на<br/>холодильник от J7</a>
+											<p>Призом является магнитик фирмы по производству соков. Отличны подарок для холодильника	</p>
+											<a class="link" href="#">Полное описание</a>
+											<p>Цена: 999 руб.</p>
+										</div>
+									  </li>
+									  <li>
+										<img src="img/goods4.png">
+										<div  class="gift-caroucel-items">
+											<a class="link" href="#">Монополия<br/>настольная</a>
+											<p>Призом является домашняя монополия - реализуйте свои несбывшиеся мечты.</p>
+											<a class="link" href="#">Полное описание</a>
+											<p>Цена: 100500 руб.</p>
+										</div>
+									  </li>
+									  <li>
+										<img src="img/goods5.png">
+										<div  class="gift-caroucel-items">
+											<a class="link" href="#">Кубики<br/>предсказаний</a>
+											<p>Призом является кубики предсказаний - для тех, кто боится принимать решения.</p>
+											<a class="link" href="#">Полное описание</a>
+											<p>Цена: душа</p>
+										</div>
+									  </li>
+									</ul>
+								</div>
+							<a href="#" class="arrow right-arrow" id="next"><div class="gift-button gift-button-right"></div></a>
+						</div>
+			
+						<script>
+						/* конфигурация */
+						var width = 150; // ширина изображения
+						var count = 1; // количество изображений
+
+						var ul = document.getElementById('images');
+						var imgs = ul.getElementsByTagName('li');
+
+						var position = 0; // текущий сдвиг влево
+
+						document.getElementById('prev').onclick = function() {
+						  if (position >= 0) return false; // уже до упора
+
+						  // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+						  position = Math.min(position + width*count, 0)
+						  ul.style.marginLeft = position + 'px';
+						  return false;
+						}
+
+						document.getElementById('next').onclick = function() {
+						  if (position <= -width*(imgs.length-count)) return false; // уже до упора
+
+						  // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+						  position = Math.max(position-width*count, -width*(imgs.length-count));
+						  ul.style.marginLeft = position + 'px';
+						  return false;
+						};
+
+						</script>
+					</div>
+					<div class="quiz-form">
+						<p>
+							Перед началом участия в викторине выберите подарок и укажите ваш электронный адрес -
+							на него в случае выигрыша вам будет доставлен приз. После нажатия на кнопку "Старт" вам будет предложено 
+							ответить на семь несложных вопросов по теме лицензионного софта. По каждому вопросу на страницах сайта магазина
+							Allsoft.ru можно найти подсказки. Если вы ответите правильно на все вопросы, то вам незамедлительно будет вручен подарок! 
+							Для участия в викторине у вас есть две попытки.
+						</p>
+						
+						<form>
+							<label class="quiz-form-email">Ваша электронная почта <input type="email" placeholder="example@example.com"></label>
+							<h2><span>Вопрос 1</span> из 7</h2>
+							<p>Какого числа Windows 7 появилась в продаже?</p>
+							<label><input type="radio" checked name="quiz-val"> 22 октября 2009 года</label>
+							<label><input type="radio" name="quiz-val"> 15 сентября 2009 года</label>
+							<label><input type="radio" name="quiz-val"> 10 ноября 2009 года</label>
+							<input class="button" type="image" src="img/button-form.png">
+						</form>
+					</div>
+				</section>
+			</div>	
+			<section class="idea-block">
+				<h2>Идеи для подарков</h2>
+				<p class="blue-text">Нет времени бегать по магазинам? Купите, не слезая со стула! ;)</p>
+				<ul>
+					<li class="item">
+						<img src="img/goods2.png" />
+						<a href="#">Десижн-мейкер</a>
+						<p>
+							магический прибор
+							для принятия решений
+							в финансовых вопросах)
+							серебр.с текстом на русс.яз.
+						</p>
+					</li>
+					<li class="item">
+						<img src="img/goods5.png" />
+						<a href="#">Десижн-мейкер</a>
+						<p>
+							магический прибор
+							для принятия решений
+							в финансовых вопросах)
+							серебр.с текстом на русс.яз.
+						</p>
+					</li>
+					<li class="item">
+						<img src="img/goods4.png" />
+						<a href="#">Монополия</a>
+						<p>
+							магический прибор
+							для принятия решений
+							в финансовых вопросах)
+							серебр.с текстом.
+						</p>
+					</li>
+					<li class="item">
+						<img src="img/goods3.png" />
+						<a href="#">Монополия</a>
+						<p>
+							магический прибор
+							для принятия решений
+							в финансовых вопросах)
+							серебр.с текстом.
+						</p>
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</section>
+
+			<section>
+				<h2>Партнеры акции</h2>
+				<div class="partnership-carousel">
+				<a href="#" class="arrow left-arrow" id="prev2"><div class="partnership-button partnership-button-left"></div></a>
+				  <div class="gallery2">
+					<ul id="images2">
+					  <li><img src="img/companies1.png"></li>
+					  <li><img src="img/companies2.png"></li>
+					  <li><img src="img/companies3.png"></li>
+					  <li><img src="img/companies4.png"></li>
+					  <li><img src="img/companies5.png"></li>
+					  <li><img src="img/companies6.png"></li>
+					  <li><img src="img/companies2.png"></li>
+					  <li><img src="img/companies3.png"></li>
+					  <li><img src="img/companies4.png"></li>
+					  <li><img src="img/companies5.png"></li>
+					</ul>
+				  </div>
+				<a href="#" class="arrow right-arrow" id="next2"><div class="partnership-button partnership-button-right"></div></a>
+				</div>
+				
+				<script>
+						/* конфигурация */
+				var width2 = 160; // ширина изображения
+				var count2 = 1; // количество изображений
+
+				var ul2 = document.getElementById('images2');
+				var imgs2 = ul.getElementsByTagName('li');
+
+				var position2 = 0; // текущий сдвиг влево
+
+				document.getElementById('prev2').onclick = function() {
+				  if (position2 >= 0) return false; // уже до упора
+
+				  // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+				  position2 = Math.min(position2 + width2*count2, 0)
+				  ul2.style.marginLeft = position2 + 'px';
+				  return false;
+				}
+
+				document.getElementById('next2').onclick = function() {
+				  if (position2 <= -width2*(imgs2.length-count2)) return false; // уже до упора
+
+				  // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+				  position2 = Math.max(position2-width2*count2, -width2*(imgs2.length-count2));
+				  ul2.style.marginLeft = position2 + 'px';
+				  return false;
+				};
+
+				</script>
+			</section>
+			<footer>	
+				<img class="img-allsoft" src="img/logo-footer.png" />
+				<p>
+					Сроки проведения акции 1-30 января 2012 года.
+					Организатор акции - интернет-магазин Allsoft.ru. 
+					Все вопросы по акции, пожалуйста, направляйте на <a href="#">info@allsoft.ru</a>
+				</p>
+				<img src="img/footer-arrow1.png" />
+				<img src="img/footer-arrow2.png" />
+				<img class="img-softline" src="img/logo-footer2.png" />
+			</footer>
+		</div>
+		<div class="footer-sticky">
+			<a href="#" class="present-abby"><img src="img/presents4.png" /></a>
+			<a href="#" class="present-navitel"><img src="img/presents3.png" />
+			<a href="#" class="present-microsoft"><img src="img/presents2.png" />
+			<a href="#" class="present-movavi"><img src="img/presents1.png" />
+			<a href="#" class="present-panda"><img src="img/presents5.png" />
+		</div>
+		
+	</body>
+</html>
