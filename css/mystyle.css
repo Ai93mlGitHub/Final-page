@@ -12,10 +12,11 @@ body{
 }
 
 .body-wrapper{
+	z-index:100;
 
 	height: auto !important;  
 	height: 100%;  
-	min-height: 100%;  
+	min-height: 1620px;  
 	position: relative; 
 	
 	margin: 0 auto;
@@ -489,26 +490,36 @@ footer .img-softline{
 	margin: 20px 0 0 20px;*/
 }
 .present-abby{
+	z-index: 101 !important;
+	
 	position: absolute;
 	bottom:1380px;
 	right:-20px;
 }
 .present-navitel{
+	z-index: 101 !important;
+
 	position: absolute;
 	bottom:1279px;
 	right:65px;
 }
 .present-microsoft{
+	z-index: 101 !important;
+	
 	position: absolute;
 	bottom:1170px;
 	right:-20px;
 }
 .present-movavi{
+	z-index: 101 !important;
+	
 	position: absolute;
 	bottom:1030px;
 	right:5px;
 }
 .present-panda{
+	z-index: 101 !important;
+	
 	position: absolute;
 	bottom:915px;
 	right:10px;
