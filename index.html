@@ -217,62 +217,66 @@
 				<div class="clear"></div>
 			</section>
 
-			<section>
-				<h2>Партнеры акции</h2>
-				<div class="partnership-carousel">
-				<a href="#" class="arrow left-arrow" id="prev2"><div class="partnership-button partnership-button-left"></div></a>
-				  <div class="gallery2">
-					<ul id="images2">
-					  <li><img src="img/companies1.png"></li>
-					  <li><img src="img/companies2.png"></li>
-					  <li><img src="img/companies3.png"></li>
-					  <li><img src="img/companies4.png"></li>
-					  <li><img src="img/companies5.png"></li>
-					  <li><img src="img/companies6.png"></li>
-					  <li><img src="img/companies2.png"></li>
-					  <li><img src="img/companies3.png"></li>
-					  <li><img src="img/companies4.png"></li>
-					  <li><img src="img/companies5.png"></li>
-					</ul>
-				  </div>
-				<a href="#" class="arrow right-arrow" id="next2"><div class="partnership-button partnership-button-right"></div></a>
-				</div>
-				
-				<script>
-						/* конфигурация */
-				var width2 = 160; // ширина изображения
-				var count2 = 1; // количество изображений
-
-				var ul2 = document.getElementById('images2');
-				var imgs2 = ul.getElementsByTagName('li');
-
-				var position2 = 0; // текущий сдвиг влево
-
-				document.getElementById('prev2').onclick = function() {
-				  if (position2 >= 0) return false; // уже до упора
-
-				  // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
-				  position2 = Math.min(position2 + width2*count2, 0)
-				  ul2.style.marginLeft = position2 + 'px';
-				  return false;
-				}
-
-				document.getElementById('next2').onclick = function() {
-				  if (position2 <= -width2*(imgs2.length-count2)) return false; // уже до упора
-
-				  // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
-				  position2 = Math.max(position2-width2*count2, -width2*(imgs2.length-count2));
-				  ul2.style.marginLeft = position2 + 'px';
-				  return false;
-				};
- 
-				</script>
-			</section>
-			<div class="clear"></div>
+			
 		</div>
 		<div class="footer-wrapper">
 			<div>
-				<footer>	
+			
+				<footer>
+					<section>
+						<h2>Партнеры акции</h2>
+						<div class="partnership-carousel">
+						<a href="#" class="arrow left-arrow" id="prev2"><div class="partnership-button partnership-button-left"></div></a>
+						  <div class="gallery2">
+							<ul id="images2">
+							  <li><img src="img/companies1.png"></li>
+							  <li><img src="img/companies2.png"></li>
+							  <li><img src="img/companies3.png"></li>
+							  <li><img src="img/companies4.png"></li>
+							  <li><img src="img/companies5.png"></li>
+							  <li><img src="img/companies6.png"></li>
+							  <li><img src="img/companies2.png"></li>
+							  <li><img src="img/companies3.png"></li>
+							  <li><img src="img/companies4.png"></li>
+							  <li><img src="img/companies5.png"></li>
+							</ul>
+						  </div>
+						<a href="#" class="arrow right-arrow" id="next2"><div class="partnership-button partnership-button-right"></div></a>
+						</div>
+						
+						<script>
+								/* конфигурация */
+						var width2 = 160; // ширина изображения
+						var count2 = 1; // количество изображений
+
+						var ul2 = document.getElementById('images2');
+						var imgs2 = ul.getElementsByTagName('li');
+
+						var position2 = 0; // текущий сдвиг влево
+
+						document.getElementById('prev2').onclick = function() {
+						  if (position2 >= 0) return false; // уже до упора
+
+						  // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+						  position2 = Math.min(position2 + width2*count2, 0)
+						  ul2.style.marginLeft = position2 + 'px';
+						  return false;
+						}
+
+						document.getElementById('next2').onclick = function() {
+						  if (position2 <= -width2*(imgs2.length-count2)) return false; // уже до упора
+
+						  // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+						  position2 = Math.max(position2-width2*count2, -width2*(imgs2.length-count2));
+						  ul2.style.marginLeft = position2 + 'px';
+						  return false;
+						};
+		 
+						</script>
+					</section>
+					
+					<div class="clear"></div>
+				
 					<img class="img-allsoft" src="img/logo-footer.png" />
 					<p>
 						Сроки проведения акции 1-30 января 2012 года.

@@ -20,7 +20,7 @@ body{
 	position: relative; 
 	
 	margin: 0 auto;
-	padding-bottom:100px;
+	padding-bottom:70px;
 	width:1000px;
 	
 }
@@ -377,11 +377,13 @@ div.head-logo>img{
 	text-decoration:underline;
 }
 .partnership-carousel{
+  z-index: 101 !important;
+
 
   position: relative;
-  left: -15px;
+  left: -20px;
   width: 881px;
-  margin: 15px 0 0 0;
+  margin: 15px 0 15px 0;
   padding: 0 28px;
   border: 2px solid #36a01d;
   border-radius: 23px;
@@ -438,7 +440,6 @@ div.head-logo>img{
 	height:87px;
 	border:0;
 }
-
 .partnership-button-left{
 	background: url(../img/prevbutton2.png);
 }
@@ -467,9 +468,14 @@ div.head-logo>img{
 }
 footer{
 	position:absolute;
-	bottom:60px;
+	bottom:205px;
 	
 	padding-top:0;
+}
+footer section{
+	z-index: 101 !important;
+	
+	padding:0;
 }
 footer *{
 	float:left;
