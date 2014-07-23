@@ -1,4 +1,4 @@
-html {
+/*html {
 	height: 100%;
 }   
 body{	 
@@ -24,21 +24,16 @@ body{
 	width:1000px;
 	
 }
+
 .header-sky{
 
-	margin: 0 auto;
-	
-	margin-bottom:-410px;
-	width: 1000px;
-	height: 410px;
-	
-	background: url(../img/bodybg.png) no-repeat;
 }
 header{
 
 	padding:0 50px;
 	height:140px;
 }
+*/
 article{
 
 	display:block;
@@ -81,7 +76,7 @@ label{
 .clear{
 	clear:both;
 }		
-
+/*
 .head-logo{
 	float:left;
 	
@@ -219,23 +214,23 @@ div.head-logo>img{
 }
 .quiz-body-shadow{
 	background: url(../img/quiz-shadow.png) 12.5% 0 repeat-y;
-}
+}*/
 .quiz-gift{
 	float:left;
 	width:160px;
 	margin: 15px 13px 0 50px;
 	
 }
+/*
 .gift-caroucel-items{
 	width:150px ;
 	margin: 15px 0 0 0;
-}
-.gift-carousel-items{
 	width:150px;
 }
 .gift-caroucel-items p{
 	margin-bottom:10px;
 }
+
 .gift-carousel {
   position: relative;
   width: 129px;
@@ -243,11 +238,13 @@ div.head-logo>img{
   margin-left:-10px;
   margin-bottom:10px;
 }
+
 .gift-carousel img {
   width: 123px;
   height: 108px;
   display: block;
 }
+
 .gift-carousel .arrow {
   position: absolute;
   top: 35px;
@@ -256,6 +253,7 @@ div.head-logo>img{
 .gift-carousel .arrow:hover {
 	opacity:0.8;
 }
+
 .gift-carousel .left-arrow {
   left: 2px;
 }
@@ -280,7 +278,7 @@ div.head-logo>img{
 .gift-gallery ul li img{
 	margin-left:21px;
 	width:108px;
-}
+}*/
 .gift-button{
 	width:28px;
 	height: 43px;
@@ -297,10 +295,11 @@ div.head-logo>img{
 .gift-button-right:hover{
 	background: url(../img/nextbuttonpress.png);
 }
+
 .quiz-form{
-	float: left;
+	float: right;
 	width: 411px;
-	margin: 15px 0 0 26px;
+	margin: 15px 20px 0 26px;
 }
 .quiz-form>p{
 	line-height: 14px;
@@ -330,7 +329,7 @@ div.head-logo>img{
 .quiz-form form input[type="image"]{
 	display:inline-block;
 	
-	margin:15px 0 80px 0;
+	margin:15px 0 0 0;
 	width:207px;
 	height:39px;
 }
@@ -452,11 +451,14 @@ div.head-logo>img{
 .partnership-button-right:hover{
 	background: url(../img/nextbutton2pass.png);
 }
+
+<!--
 .footer-wrapper{
 	position:absolute;
 	bottom:0;
 	width:100%;
 }
+-->
 .footer-wrapper>div{
 	position:relative;
 	

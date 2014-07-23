@@ -1,0 +1,233 @@
+.b-page{}
+.b-block_paddings{
+	display:block;
+	padding: 35px 0 0 50px;
+}
+
+.b-page__head-line{
+	margin: 0 auto;
+	
+	margin-bottom:-410px;
+	width: 1000px;
+	height: 410px;
+	
+	background: url(../img/bodybg.png) no-repeat;
+}
+
+.b-page__top-wrapper{
+	z-index:100;
+
+	height: auto !important;  
+	height: 100%;  
+	min-height: 1470px;  
+	position: relative; 
+	
+	margin: 0 auto;
+	padding-bottom:245px;
+	width:1000px;
+}
+	.b-head{
+		padding:0 50px;
+		height:140px;
+	}
+		.b-head__logo{
+			display:block;
+			float:left;
+	
+			width:340px;
+			height: 140px;
+			
+			background: #fff;
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius:10px;
+		}
+			.b-logo__img{
+				position:relative;
+				top:25%;
+				
+				display:block;
+				margin: 0 auto;
+			}
+		.b-head__strip{
+			display:block;
+			float:left;
+			
+			margin:0 0 0 25px;
+			padding:40px 0 0 0;
+			
+			width: 355px;
+		}
+		.b-head__strip_font{
+			font: italic normal bold 30px/40px "Trebuchet MS", Arial, sans-serif;
+		}
+			.b-head__strip_new-line{
+				display: block;
+				float:left;
+				
+				margin-bottom:5px;
+				padding: 0 5px;
+				
+				background:#005b7f;
+				color: #fff;
+			}
+			.b-head__strip_year{
+				position:relative;
+				top: 10px;
+				
+				color: #005b7f;
+				font-size: 65px;
+			}
+		.b-head__nav{
+			float:right;
+	
+			display:block;
+			
+			margin: 35px 45px 0 0;
+			min-width:100px;
+			max-width:155px;
+		}
+		.b-head__nav_theme_blue{
+			background: #005b7f;
+			border-radius: 15px;
+		}
+			.b-nav__list{			
+				margin:5px;
+				padding:0 5px;
+				min-width:85px;
+				
+				list-style:none;
+			}
+			.b-nav__list-item{
+				display:block;
+			}
+			.b-nav__list-item_a{
+				display:block;
+	
+				padding:0 5px;
+				min-width:80px;
+			}
+				.b-list-item_a_theme_blue{
+					font: 14px/30px Arial;
+					
+					color: white;
+					background-color:white;
+					border-radius:10px;
+					background-color: inherit;
+				}
+			.b-nav__list-item_a:hover{
+				color: black;
+				background-color: white;
+			}
+
+	.b-quiz-wrapper{
+		margin-top:-90px;
+		padding-top: 90px;
+		width: 760px;
+
+		background: url(../img/gifts.png) no-repeat;
+	}
+		.b-quiz-block{
+			padding:0;
+			width: 680px;
+			border-bottom-right-radius:25px;
+		}
+			.b-quiz-title{
+				display:table;
+				
+				margin-top: 130px;
+				width: 680px;
+				
+				background: url(../img/quiz-green_bg.png) repeat-y;
+				border-top-right-radius:25px;
+			}
+				.b-quiz-title__h{
+					display: table-cell;
+					width:157px;
+					padding: 25px 20px 15px 50px;
+					color: #fff;
+				}
+				.b-quiz-title__p{
+					display: table-cell;
+					padding: 25px 45px 15px 25px;
+					width: 405px;
+					
+					font-size:14px;
+					color: #fff;
+					text-align:left;
+					vertical-align:bottom;
+				}
+				.b-quiz-title__p_new-line{
+					display:block;
+				}
+			.b-quiz-section{
+				background:
+					url(../img/quiz-yellow_bg-end.png) 0 102% no-repeat,
+					linear-gradient(to top, #d6e6e9, #fbf2c6);
+				border-bottom-right-radius:25px;
+			}
+				.b-quiz-section_shadow{
+					padding-bottom:80px;
+					min-height:120px;
+					background: url(../img/quiz-shadow.png) 12.5% 0 repeat-y;
+				}
+					.b-quiz-block-select-of-gift{
+						float:left;
+						width:160px;
+						margin: 15px 13px 0 50px;
+					}
+					
+						.b-gift-carousel{
+							position: relative;
+							width: 129px;
+							padding: 0 30px 0 12px;
+							margin-left:-10px;
+							margin-bottom:10px;
+						}
+							.b-gift-carousel__arrow{
+								position: absolute;
+								top: 35px;
+								text-decoration: none;
+							}
+								.b-gift-arrow-left{
+								  left: 2px;
+								}
+								.b-gift-arrow-right{
+								  right: 0px;
+								}
+							.b-gift-carousel__arrow:hover{
+								opacity:0.8;
+							}
+							.b-gift-carousel_gallery{
+								width: 150px;
+								overflow: hidden;
+							}						
+								.b-gift-gallery-content-list{
+									height: 108px;
+									width: 9999px;
+									margin: 0;
+									padding: 0;
+									list-style: none;
+								}
+									.b-gift-gallery-item{
+										float: left;
+									}
+										.b-gift-gallery-item-content{
+											width:150px ;
+											margin: 15px 0 0 0;
+											width:150px;
+										}
+										.b-gift-gallery-item__img{
+											display: block;
+											margin-left: 21px;
+											height: 108px;
+											width: 108px;
+										}
+										.b-gift-gallery-item__paragraph{
+											margin-bottom: 10px;
+										}
+									
+.b-page__footer-wrapper{
+	position:absolute;
+	bottom:0;
+	width:100%;
+}
