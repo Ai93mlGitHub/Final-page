@@ -10,8 +10,28 @@ body{
 	margin:0;
 	font: 12px Arial, sans-serif;
 }
+header{
+
+	padding:0 50px;
+	height:140px;
+}
+
+article{
+
+	display:block;
+	width: 625px;
+	padding: 35px 0 0 50px;
+}
+section{
+	
+	display:block;
+	padding: 35px 0 0 50px;
+}
 footer{
+	display:block;
+	padding: 35px 0 0 50px;
 	height: 20px;
+}
 }
 h1{
 	margin:0;

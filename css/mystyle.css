@@ -33,7 +33,7 @@ header{
 	padding:0 50px;
 	height:140px;
 }
-*/
+
 article{
 
 	display:block;
@@ -76,7 +76,7 @@ label{
 .clear{
 	clear:both;
 }		
-/*
+
 .head-logo{
 	float:left;
 	
@@ -214,14 +214,14 @@ div.head-logo>img{
 }
 .quiz-body-shadow{
 	background: url(../img/quiz-shadow.png) 12.5% 0 repeat-y;
-}*/
+}
 .quiz-gift{
 	float:left;
 	width:160px;
 	margin: 15px 13px 0 50px;
 	
 }
-/*
+
 .gift-caroucel-items{
 	width:150px ;
 	margin: 15px 0 0 0;
@@ -278,7 +278,7 @@ div.head-logo>img{
 .gift-gallery ul li img{
 	margin-left:21px;
 	width:108px;
-}*/
+}
 .gift-button{
 	width:28px;
 	height: 43px;
@@ -339,6 +339,7 @@ div.head-logo>img{
 .quiz-form form input[type="radio"]{
 	margin:0 5px 0 0;
 }
+
 .idea-block{
 	width: 625px;
 	margin: 35px 0 0 50px;
@@ -374,7 +375,7 @@ div.head-logo>img{
 }
 .item a{
 	text-decoration:underline;
-}
+}*/
 .partnership-carousel{
   z-index: 101 !important;
 
