@@ -5,6 +5,9 @@
 .b-clear{
 	clear:both;
 }
+.b-block__element_hidden{
+	display:none;
+}
 .b-block_paddings{
 	display:block;
 	padding: 35px 0 0 50px;
@@ -327,67 +330,149 @@
 	bottom:0;
 	width:100%;
 }
-/*
-	.b-gift-carousel{
-		position: relative;
-		width: 129px;
-		padding: 0 30px 0 12px;
-		margin-left:-10px;
-		margin-bottom:10px;
-	}
-		.b-gift-carousel__arrow{
-			position: absolute;
-			top: 35px;
-			text-decoration: none;
-		}
-		.b-gift-arrow-left{
-		  left: 2px;
-		}
-		.b-gift-arrow-right{
-		  right: 0px;
-		}
-		.b-gift-button_size{
-			width:28px;
-			height: 43px;
-		}
-		.b-gift-button_left{
-			background: url(../img/prevbutton.png);
-		}
-		.b-gift-button_left:hover{
-			background: url(../img/prevbuttonpress.png);
-		}
-		.b-gift-button_right{
-			background: url(../img/nextbutton.png);
-		}
-		.b-gift-button_right:hover{
-			background: url(../img/nextbuttonpress.png);
-		}
-							.b-gift-carousel_gallery{
-								width: 150px;
-								overflow: hidden;
-							}						
-								.b-gift-gallery-content-list{
-									height: 108px;
-									width: 9999px;
-									margin: 0;
-									padding: 0;
-									list-style: none;
-								}
-									.b-gift-gallery-item{
-										float: left;
-									}
-										.b-gift-gallery-item-content{
-											width:150px ;
-											margin: 15px 0 0 0;
-											width:150px;
-										}
-										.b-gift-gallery-item__img{
-											display: block;
-											margin-left: 21px;
-											height: 108px;
-											width: 108px;
-										}
-										.b-gift-gallery-item__paragraph{
-											margin-bottom: 10px;
-										}
+	.b-footer-block{
+		position:relative;
 	
+		margin: 0 auto;
+		width:1000px;
+		height:1700px;
+		
+		background: url(../img/elka.png) no-repeat;
+	}
+		.b-present_abby{
+			z-index: 101 !important;
+			
+			position: absolute;
+			bottom:1380px;
+			right:-20px;
+		}
+		.b-present_navitel{
+			z-index: 101 !important;
+
+			position: absolute;
+			bottom:1279px;
+			right:65px;
+		}
+		.b-present_microsoft{
+			z-index: 101 !important;
+			
+			position: absolute;
+			bottom:1170px;
+			right:-20px;
+		}
+		.b-present_movavi{
+			z-index: 101 !important;
+			
+			position: absolute;
+			bottom:1030px;
+			right:5px;
+		}
+		.b-present_panda{
+			z-index: 101 !important;
+			
+			position: absolute;
+			bottom:915px;
+			right:10px;
+		}
+	
+		.b-footer{
+			position:absolute;
+			bottom:225px;
+			
+			padding-top:0;
+		}
+			.b-footer__partner_carousel-section{
+				float:left;
+			
+				z-index: 101 !important;
+				
+				padding:0;
+			}
+				.b-partner-carousel{
+					z-index: 101 !important;
+
+					position: relative;
+					left: -20px;
+					width: 881px;
+					margin: 15px 0 15px 0;
+					padding: 0 28px;
+					border: 2px solid #36a01d;
+					border-radius: 23px;
+				}
+				.b-partnership-carousel__img{
+					width: 160px;
+					height: 60px;
+					margin-top:15px;
+					display: block;
+				}
+				.b-partner-carousel__arrow{
+					position: absolute;
+					top: -3px;
+					padding: 0;
+					font-size: 24px;
+					color: #fff;
+					text-decoration: none;
+				}
+					.b-partner-arrow-left{
+						left:-2px;
+					}
+					.b-partner-arrow-right{
+						right:-5px;
+					}
+				.b-partner-carousel_gallery{
+					width: 885px;
+					height: 83px;
+					overflow: hidden;
+					background-color: #fff;
+				}
+				.b-partner-gallery-content-list{
+					height: 60px;
+					width: 9999px;
+					margin: 0;
+					padding: 0;
+					list-style: none;
+				}
+					.b-partner-gallery-item{
+						float: left;
+					}
+				.b-partner-button_param{
+					margin:0;
+					padding:0;
+					width: 29px;
+					height:87px;
+					border:0;
+				}
+					.b-partner-button_left{
+						background: url(../img/prevbutton2.png);
+					}
+					.b-partner-button_left:hover{
+						background: url(../img/prevbutton2pass.png);
+					}
+					.b-partner-button_right{
+						background: url(../img/nextbutton2.png);
+					}
+					.b-partner-button_right:hover{
+						background: url(../img/nextbutton2pass.png);
+					}
+			
+			.b-footer__img_allsoft{
+				float:left;
+				
+				margin: 0 25px 0 19px;
+			}
+			.b-footer__text{
+				float: left;
+				
+				width: 380px;
+				margin: 10px 65px 0 0;
+			}
+			.b-footer__img-arrow{
+				float: left;
+
+				margin:20px 10px 0 0;
+			}
+			.b-footer__img_softline{
+				float: left;
+			
+				margin: 20px 0 0 20px;*/
+			}

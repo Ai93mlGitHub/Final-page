@@ -375,7 +375,7 @@ div.head-logo>img{
 }
 .item a{
 	text-decoration:underline;
-}*/
+}
 .partnership-carousel{
   z-index: 101 !important;
 
@@ -452,14 +452,11 @@ div.head-logo>img{
 .partnership-button-right:hover{
 	background: url(../img/nextbutton2pass.png);
 }
-
-<!--
 .footer-wrapper{
 	position:absolute;
 	bottom:0;
 	width:100%;
 }
--->
 .footer-wrapper>div{
 	position:relative;
 	
@@ -494,40 +491,40 @@ footer p+img, footer p+img+img{
 	margin:20px 10px 0 0;
 }
 footer .img-softline{
-	margin: 20px 0 0 20px;*/
+	margin: 20px 0 0 20px;
 }
-.present-abby{
+.b-present_abby{
 	z-index: 101 !important;
 	
 	position: absolute;
 	bottom:1380px;
 	right:-20px;
 }
-.present-navitel{
+.b-present_navitel{
 	z-index: 101 !important;
 
 	position: absolute;
 	bottom:1279px;
 	right:65px;
 }
-.present-microsoft{
+.b-present_microsoft{
 	z-index: 101 !important;
 	
 	position: absolute;
 	bottom:1170px;
 	right:-20px;
 }
-.present-movavi{
+.b-present_movavi{
 	z-index: 101 !important;
 	
 	position: absolute;
 	bottom:1030px;
 	right:5px;
 }
-.present-panda{
+.b-present_panda{
 	z-index: 101 !important;
 	
 	position: absolute;
 	bottom:915px;
 	right:10px;
-}
+}*/
