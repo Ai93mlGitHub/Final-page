@@ -1,4 +1,4 @@
-.b-page{}
+
 .b-page_text_blue{
 		color: #0072bc;
 }
@@ -8,11 +8,14 @@
 .b-block__element_hidden{
 	display:none;
 }
-.b-block_paddings{
+
+.b-block_paddings_35-0-0-50{
 	display:block;
 	padding: 35px 0 0 50px;
 }
-
+.b-block_width_625px{
+	width:625px;
+}
 .b-page__head-line{
 	margin: 0 auto;
 	
@@ -294,8 +297,6 @@
 							
 	.b-block-idea{
 		width: 625px;
-		margin: 35px 0 0 50px;
-		padding:0;
 	}	
 		.b-block-idea__caption{
 			padding:0;
