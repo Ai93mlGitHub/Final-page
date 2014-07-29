@@ -69,10 +69,10 @@
 			
 	width: 355px;
 }
-.b-head__strip_font{
+.b-head__title_text-style{
 	font: italic normal bold 30px/40px "Trebuchet MS", Arial, sans-serif;
 }
-.b-head__strip_new-line{
+.b-head__title_new-line{
 	display: block;
 	float:left;
 				
@@ -82,25 +82,26 @@
 	background:#005b7f;
 	color: #fff;
 }
-.b-head__strip_year{
+.b-head__title_year{
 	position:relative;
 	top: 10px;
 				
 	color: #005b7f;
 	font-size: 65px;
 }
-.b-head__nav{
-	float:right;
-	
+.b-nav{
 	display:block;
 			
 	margin: 35px 45px 0 0;
 	min-width:100px;
 	max-width:155px;
-}
-.b-head__nav_theme_blue{
-	background: #005b7f;
+	
 	border-radius: 15px;
+}
+.b-nav_type-header{
+	float:right;
+	
+	background: #005b7f;
 }
 .b-nav__list{			
 	margin:5px;
@@ -112,13 +113,13 @@
 .b-nav__list-item{
 	display:block;
 }
-.b-nav__list-item_a{
+.b-nav__item-text{
 	display:block;
 
 	padding:0 5px;
 	min-width:80px;
 }
-.b-list-item_a_theme_blue{
+.b-nav__item-text_type-header{
 	font: 14px/30px Arial;
 		
 	color: white;
@@ -126,24 +127,24 @@
 	border-radius:10px;
 	background-color: inherit;
 }
-.b-nav__list-item_a:hover{
+.b-nav__item-text_type-header:hover{
 	color: black;
 	background-color: white;
 }
 
-.b-quiz-wrapper{
+.b-quiz-wrapper_presents{
 	margin-top:-90px;
 	padding-top: 90px;
 	width: 760px;
 
 	background: url(../img/gifts.png) no-repeat;
 }
-.b-quiz-block{
+.b-quiz-wrapper_rounded{
 	padding:0;
 	width: 680px;
 	border-bottom-right-radius:25px;
 }
-.b-quiz-title{
+.b-quiz-title-section{
 	display:table;
 		
 	margin-top: 130px;
@@ -152,14 +153,14 @@
 	background: url(../img/quiz-green_bg.png) repeat-y;
 	border-top-right-radius:25px;
 }
-.b-quiz-title__h{
+.b-quiz-title-section__title{
 	display: table-cell;
 	width:157px;
 
 	padding: 25px 20px 15px 50px;
 	color: #fff;
 }
-.b-quiz-title__p{
+.b-quiz-title-section__about{
 	display: table-cell;
 	padding: 25px 45px 15px 25px;
 	width: 405px;
@@ -172,7 +173,7 @@
 .b-quiz-title__p_new-line{
 	display:block;
 }
-.b-quiz-section{
+.b-quiz-content-section{
 	background:
 		url(../img/quiz-yellow_bg-end.png) 0 102% no-repeat,
 		linear-gradient(to top, #d6e6e9, #fbf2c6);
