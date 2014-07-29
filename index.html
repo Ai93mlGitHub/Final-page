@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+
+<!-- TODO: полумать над названием кнопок
+		   .b-block_paddings_35-0-0-50 - плохо изменить
+ -->
+
 <html>
 
 	<head>
@@ -16,15 +21,22 @@
 		<div class="b-page__head-line"></div>
 		
 		<div class="b-page__top-wrapper">
-			<header class="b-head b-block_paddings_35-0-0-50">
+			<header class="b-head b-block_paddings-standart">
 				<a class="b-head__logo" href="#">
 					<img class="b-logo__img" src="img/logo-allsoft.png" alt="Allsoft"/>
 				</a>
-				<h1 class="b-head__strip b-head__strip_font">
+				
+				<!-- TODO: исправить название css блока вместо b-head__strip -> b-page__title добавить жлементы и их модификаторы</!-->-->
+				
+				<h1 class="b-head__head-title b-head__strip_font">
 					<span class="b-head__strip_new-line"> Новогодняя викторина </span>
 					<span class="b-head__strip_new-line"> от Allsoft.ru </span>
 					<span class="b-head__strip_year">2012</span>
 				</h1>
+				
+				<!-- TODO: исправить  css https://github.com/Ai93mlGitHub/Final-page/commit/d50ffd9b12ee736ac5d8c1f371412c79d4a6585e#commitcomment-7145086
+						   убрать навигацию из шапки изменить css
+				-->
 				<nav class="b-head__nav b-head__nav_theme_blue">
 					<ul class="b-nav__list">
 						<li class="b-nav__list-item"><a class="b-nav__list-item_a b-list-item_a_theme_blue" href="#">О магазине</a></li>
@@ -34,7 +46,7 @@
 				</nav>
 			</header>
 			
-			<article class="b-block_width_625px b-block_paddings_35-0-0-50">
+			<article class="b-block_width_625px b-block_paddings-standart">
 				<h2>Команда Allsoft.ru поздравляет всех пользователей лицензионного софта с наступающим Новым годом!</h2>
 				<p>
 					Уходящий год был богат на события и запомнился всем нам не только финансовыми затруднениями и эпидемией гриппа. 
@@ -56,9 +68,15 @@
 			<div class="b-quiz-wrapper">			
 				<section class="b-quiz-block b-block_paddings_35-0-0-50">
 					<div class="b-quiz-title">
+					
+					<!-- TODO: изменить название классов убрать п и тд.-->
+					
 						<h2 class="b-quiz-title__h">Новогодняя викторина</h2>
 						<p class="b-quiz-title__p"><span class="b-quiz-title__p_new-line">Ответьте правильно на несколько вопросов</span><span>и мы подарим вам лицензию на выбранный подарок!</span></p>
-					</div>			
+					</div>	
+
+					<!-- TODO: изменить название у блока тень и секция чтобы сосответствовало методологии -->
+					
 					<div class="b-quiz-section">
 						<div class="b-quiz-section_shadow">
 							<div class="b-quiz-block-select-of-gift">
@@ -176,14 +194,14 @@
 				</section>
 			</div>	
 			
-			<section class="b-block_size_625px b-block_paddings_35-0-0-50">
+			<section class="b-block_size_625px b-block_paddings-standart">
 				<h2 class="b-block-idea__caption">Идеи для подарков</h2>
 				<p class="b-page_text_blue b-block-idea__text">Нет времени бегать по магазинам? Купите, не слезая со стула! ;)</p>
 				<ul class="b-block-idea__items">
 					<li class="b-item-idea__item">
 						<img class="b-item-idea__img" src="img/goods2.png" alt="Десижн-мейкер"/>
 						<a class="b-block-idea__link" href="#">Десижн-мейкер</a>
-						<p>
+						<p class="b-block-idea_about">
 							магический прибор
 							для принятия решений
 							в финансовых вопросах)
@@ -193,7 +211,7 @@
 					<li class="b-item-idea__item">
 						<img class="b-item-idea__img" src="img/goods5.png" alt="Десижн-мейкер"/>
 						<a class="b-block-idea__link" href="#">Десижн-мейкер</a>
-						<p>
+						<p class="b-block-idea_about">
 							магический прибор
 							для принятия решений
 							в финансовых вопросах)
@@ -203,7 +221,7 @@
 					<li class="b-item-idea__item">
 						<img class="b-item-idea__img" src="img/goods4.png" alt="Монополия"/>
 						<a class="b-block-idea__link" href="#">Монополия</a>
-						<p>
+						<p class="b-block-idea_about">
 							магический прибор
 							для принятия решений
 							в финансовых вопросах)
@@ -213,7 +231,7 @@
 					<li class="b-item-idea__item">
 						<img class="b-item-idea__img" src="img/goods3.png" alt="Монополия"/>
 						<a class="b-block-idea__link" href="#">Монополия</a>
-						<p>
+						<p class="b-block-idea_about">
 							магический прибор
 							для принятия решений
 							в финансовых вопросах)
@@ -236,23 +254,23 @@
 				<a href="#" class="b-present_movavi"><img src="img/presents1.png" alt="Movavi"/></a>
 				<a href="#" class="b-present_panda"><img src="img/presents5.png" alt="Panda"/></a>
 				
-				<footer class="b-footer b-block_paddings_35-0-0-50">
+				<footer class="b-footer b-block_paddings-standart">
 					<section class="b-footer__partner_carousel-section">
 						<h2>Партнеры акции</h2>
 						<div class="b-partner-carousel">
 							<a href="#" class="b-partner-carousel__arrow b-partner-arrow-left" id="prev2"><div class="b-partner-button_param b-partner-button_left"></div></a>
 							<div class="b-partner-carousel_gallery">
 								<ul class="b-partner-gallery-content-list" id="partner-gallery">
-									<li class="b-partner-gallery-item"><img class="b-partnership-carousel__img" src="img/companies1.png" alt="Alawar"></li>
-									<li class="b-partner-gallery-item"><img class="b-partnership-carousel__img" src="img/companies2.png" alt="AMS"></li>
-									<li class="b-partner-gallery-item"><img class="b-partnership-carousel__img" src="img/companies3.png" alt="Microsoft"></li>
-									<li class="b-partner-gallery-item"><img class="b-partnership-carousel__img" src="img/companies4.png" alt="Paragon"></li>
-									<li class="b-partner-gallery-item"><img class="b-partnership-carousel__img" src="img/companies5.png" alt="Panda"></li>
-									<li class="b-partner-gallery-item"><img class="b-partnership-carousel__img" src="img/companies6.png" alt="Agnitum"></li>
-									<li class="b-partner-gallery-item"><img class="b-partnership-carousel__img" src="img/companies2.png" alt="AMS"></li>
-									<li class="b-partner-gallery-item"><img class="b-partnership-carousel__img" src="img/companies3.png" alt="Microsoft"></li>
-									<li class="b-partner-gallery-item"><img class="b-partnership-carousel__img" src="img/companies4.png" alt="Paragon"></li>
-									<li class="b-partner-gallery-item"><img class="b-partnership-carousel__img" src="img/companies5.png" alt="Panda"></li>
+									<li class="b-partner-gallery-item"><a href="#"><img class="b-partnership-carousel__img" src="img/companies1.png" alt="Alawar"></a></li>
+									<li class="b-partner-gallery-item"><a href="#"><img class="b-partnership-carousel__img" src="img/companies2.png" alt="AMS"></a></li>
+									<li class="b-partner-gallery-item"><a href="#"><img class="b-partnership-carousel__img" src="img/companies3.png" alt="Microsoft"></a></li>
+									<li class="b-partner-gallery-item"><a href="#"><img class="b-partnership-carousel__img" src="img/companies4.png" alt="Paragon"></a></li>
+									<li class="b-partner-gallery-item"><a href="#"><img class="b-partnership-carousel__img" src="img/companies5.png" alt="Panda"></a></li>
+									<li class="b-partner-gallery-item"><a href="#"><img class="b-partnership-carousel__img" src="img/companies6.png" alt="Agnitum"></a></li>
+									<li class="b-partner-gallery-item"><a href="#"><img class="b-partnership-carousel__img" src="img/companies2.png" alt="AMS"></a></li>
+									<li class="b-partner-gallery-item"><a href="#"><img class="b-partnership-carousel__img" src="img/companies3.png" alt="Microsoft"></a></li>
+									<li class="b-partner-gallery-item"><a href="#"><img class="b-partnership-carousel__img" src="img/companies4.png" alt="Paragon"></a></li>
+									<li class="b-partner-gallery-item"><a href="#"><img class="b-partnership-carousel__img" src="img/companies5.png" alt="Panda"></a></li>
 								</ul>
 							</div>
 							<a href="#" class="b-partner-carousel__arrow b-partner-arrow-right" id="next2"><div class="b-partner-button_param b-partner-button_right"></div></a>
