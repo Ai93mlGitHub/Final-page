@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+	body {
+  padding: 10px
+}
+
+.carousel2 {
+  position: relative;
+  width: 950px;
+  padding: 0 30px;
+  border: 2px solid #36a01d;
+  border-radius: 15px;
+  background: #36a01d;
+}
+.carousel2 img {
+  width: 160px;
+  height: 60px;
+  display: block; /* если не поставить block, в ряде браузеров будет inline -> лишнее пространтсво вокруг элементов */
+}
+.carousel2 .arrow {
+  position: absolute;
+  top: 0px;
+  padding: 0;
+  background: #36a01d;
+  border-radius: 15px;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+.carousel2 .imgarrow:hover{
+	opacity:0.8;
+}
+.carousel2 .left-arrow {
+  left:-2px;
+}
+.carousel2 .right-arrow {
+  right:-2px;
+}
+.carousel2 .imgarrow{
+	width:32px;
+	height:86px;
+}
+.gallery {
+  width: 950px;
+  height: 85px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.gallery ul {
+  height: 60px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery ul li {
+	float: left;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="carousel2">
+<a href="#" class="arrow left-arrow" id="prev2"><img class="imgarrow" src="img/prevbutton2.png" /></a>
+  <div class="gallery">
+    <ul id="images">
+      <li><img src="img/companies1.png"></li>
+      <li><img src="img/companies2.png"></li>
+      <li><img src="img/companies3.png"></li>
+      <li><img src="img/companies4.png"></li>
+      <li><img src="img/companies5.png"></li>
+      <li><img src="img/companies6.png"></li>
+      <li><img src="img/companies2.png"></li>
+      <li><img src="img/companies3.png"></li>
+      <li><img src="img/companies4.png"></li>
+      <li><img src="img/companies5.png"></li>
+    </ul>
+  </div>
+<a href="#" class="arrow right-arrow" id="next2"><img class="imgarrow" src="img/nextbutton2.png" /></a>
+</div>
+
+<script>
+
+
+
+/* конфигурация */
+var width = 160; // ширина изображения
+var count = 1; // количество изображений
+
+var ul = document.getElementById('images');
+var imgs = ul.getElementsByTagName('li');
+
+var position = 0; // текущий сдвиг влево
+
+document.getElementById('prev2').onclick = function() {
+  if (position >= 0) return false; // уже до упора
+
+  // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+  position = Math.min(position + width*count, 0)
+  ul.style.marginLeft = position + 'px';
+  return false;
+}
+
+document.getElementById('next2').onclick = function() {
+  if (position <= -width*(imgs.length-count)) return false; // уже до упора
+
+  // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+  position = Math.max(position-width*count, -width*(imgs.length-count));
+  ul.style.marginLeft = position + 'px';
+  return false;
+};
+
+</script>
+</body>
+</html>

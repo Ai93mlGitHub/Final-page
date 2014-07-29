@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<style>
+body {
+  padding: 10px
+}
+
+.carousel {
+  position: relative;
+  width: 108px;
+  padding: 0 30px;
+}
+.carousel img {
+  width: 108px;
+  height: 108px;
+  display: block;
+}
+.carousel .arrow {
+  position: absolute;
+  top: 35px;
+  text-decoration: none;
+}
+
+.carousel .arrow:hover {
+	opacity:0.8;
+}
+.carousel .left-arrow {
+  left: 0;
+}
+.carousel .right-arrow {
+  right: 0px;
+}
+.gallery {
+  width: 108px;
+  overflow: hidden;
+}
+.gallery ul {
+  height: 108px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery ul li {
+	float: left;
+}
+img.button{
+	width:28px;
+	height: 43px;
+}
+</style>
+
+<div class="carousel">
+<a href="#" class="arrow left-arrow" id="prev"><img src="img/prevbutton.png" class="button" /></a>
+  <div class="gallery">
+    <ul id="images">
+      <li><img src="img/goods1.png"></li>
+      <li><img src="img/goods2.png"></li>
+      <li><img src="img/goods3.png"></li>
+      <li><img src="img/goods4.png"></li>
+      <li><img src="img/goods5.png"></li>
+    </ul>
+  </div>
+<a href="#" class="arrow right-arrow" id="next"><img src="img/nextbutton.png" class="button" /></a>
+</div>
+
+<script>
+/* конфигурация */
+var width = 108; // ширина изображения
+var count = 1; // количество изображений
+
+var ul = document.getElementById('images');
+var imgs = ul.getElementsByTagName('li');
+
+var position = 0; // текущий сдвиг влево
+
+document.getElementById('prev').onclick = function() {
+  if (position >= 0) return false; // уже до упора
+
+  // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+  position = Math.min(position + width*count, 0)
+  ul.style.marginLeft = position + 'px';
+  return false;
+}
+
+document.getElementById('next').onclick = function() {
+  if (position <= -width*(imgs.length-count)) return false; // уже до упора
+
+  // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+  position = Math.max(position-width*count, -width*(imgs.length-count));
+  ul.style.marginLeft = position + 'px';
+  return false;
+};
+
+</script>
+</body>
+</html>
